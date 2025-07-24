@@ -1,0 +1,138 @@
+# Set-Ups
+material = rna
+temperature[C] = 37.0
+trials = 10
+
+# component structures using DU+ notation
+# Transcription switch:
+structure G1 = U5 D13 (U5)
+structure G2 = U5 D13 (U5)
+structure G3 = U5 D13 (U5)
+structure G4 = U5 D13 (U5)
+structure G5 = U5 D13 (U5)
+structure G6 = U5 D13 (U5)
+structure G7 = U5 D13 (U5)
+structure G8 = U5 D13 (U5)
+structure G9 = U5 D13 (U5)
+structure G10 = U5 D13 (U5)
+
+# threshold complex:
+structure TH1 = U11 D8 (U5)
+structure TH2 = U11 D8 (U5)
+structure TH3 = U11 D8 (U5)
+structure TH4 = U11 D8 (U5)
+structure TH5 = U11 D8 (U5)
+structure TH6 = U11 D8 (U5)
+structure TH7 = U11 D8 (U5)
+structure TH8 = U11 D8 (U5)
+structure TH9 = U11 D8 (U5)
+structure TH10 = U11 D8 (U5)
+
+# repressor
+structure rR1 = D8 (U5) U11
+structure rR2 = D8 (U5) U11
+structure rR3 = D8 (U5) U11
+structure rR4 = D8 (U5) U11
+structure rR5 = D8 (U5) U11
+structure rR6 = D8 (U5) U11
+structure rR7 = D8 (U5) U11
+structure rR8 = D8 (U5) U11
+structure rR9 = D8 (U5) U11
+structure rR10 = D8 (U5) U11
+
+# setting up sequence domains
+domain ta = TAATA
+
+# transcription switch repression toehold
+domain thR1 = N5
+domain thR2 = N5
+domain thR3 = N5
+domain thR4 = N5
+domain thR5 = N5
+domain thR6 = N5
+domain thR7 = N5
+domain thR8 = N5
+domain thR9 = N5
+domain thR10 = N5
+
+# transcription switch branch-migration domain
+domain thG1 = N8
+domain thG2 = N8
+domain thG3 = N8
+domain thG4 = N8
+domain thG5 = N8
+domain thG6 = N8
+domain thG7 = N8
+domain thG8 = N8
+domain thG9 = N8
+domain thG10 = N8
+
+# transcription switch hairpin-loop domain
+domain thH1 = N5
+domain thH2 = N5
+domain thH3 = N5
+domain thH4 = N5
+domain thH5 = N5
+domain thH6 = N5
+domain thH7 = N5
+domain thH8 = N5
+domain thH9 = N5
+domain thH10 = N5
+
+# threshold repression toehold
+domain thT1 = N1
+domain thT2 = N1
+domain thT3 = N1
+domain thT4 = N1
+domain thT5 = N1
+domain thT6 = N1
+domain thT7 = N1
+domain thT8 = N1
+domain thT9 = N1
+domain thT10 = N1
+
+# thread sequence domains onto target structures
+# transcription switch
+G1.seq = thR1 ta* thG1* thH1 thG1 ta
+G2.seq = thR2 ta* thG2* thH2 thG2 ta
+G3.seq = thR3 ta* thG3* thH3 thG3 ta
+G4.seq = thR4 ta* thG4* thH4 thG4 ta
+G5.seq = thR5 ta* thG5* thH5 thG5 ta
+G6.seq = thR6 ta* thG6* thH6 thG6 ta
+G7.seq = thR7 ta* thG7* thH7 thG7 ta
+G8.seq = thR8 ta* thG8* thH8 thG8 ta
+G9.seq = thR9 ta* thG9* thH9 thG9 ta
+G10.seq = thR10 ta* thG10* thH10 thG10 ta
+
+# threshold
+TH1.seq = thT1 thR1 ta* thG1* thH1 thG1
+TH2.seq = thT2 thR2 ta* thG2* thH2 thG2
+TH3.seq = thT3 thR3 ta* thG3* thH3 thG3
+TH4.seq = thT4 thR4 ta* thG4* thH4 thG4
+TH5.seq = thT5 thR5 ta* thG5* thH5 thG5
+TH6.seq = thT6 thR6 ta* thG6* thH6 thG6
+TH7.seq = thT7 thR7 ta* thG7* thH7 thG7
+TH8.seq = thT8 thR8 ta* thG8* thH8 thG8
+TH9.seq = thT9 thR9 ta* thG9* thH9 thG9
+TH10.seq = thT10 thR10 ta* thG10* thH10 thG10
+
+# repressor
+rR1.seq = thG1* thH1* thG1 ta thR1* thT1*
+rR2.seq = thG2* thH2* thG2 ta thR2* thT2*
+rR3.seq = thG3* thH3* thG3 ta thR3* thT3*
+rR4.seq = thG4* thH4* thG4 ta thR4* thT4*
+rR5.seq = thG5* thH5* thG5 ta thR5* thT5*
+rR6.seq = thG6* thH6* thG6 ta thR6* thT6*
+rR7.seq = thG7* thH7* thG7 ta thR7* thT7*
+rR8.seq = thG8* thH8* thG8 ta thR8* thT8*
+rR9.seq = thG9* thH9* thG9 ta thR9* thT9*
+rR10.seq = thG10* thH10* thG10 ta thR10* thT10*
+
+# tubes
+tube Rs = rR1 rR2 rR3 rR4 rR5 rR6 rR7 rR8 rR9 rR10
+tube THs = TH1 TH2 TH3 TH4 TH5 TH6 TH7 TH8 TH9 TH10
+Rs.maxsize = 2
+THs.maxsize = 2
+
+# constraints
+prevent = AAAA, CCCC, GGGG, UUUU, KKKKKK, MMMMMM, RRRRRR, SSSSSS, WWWWWW, YYYYYY
