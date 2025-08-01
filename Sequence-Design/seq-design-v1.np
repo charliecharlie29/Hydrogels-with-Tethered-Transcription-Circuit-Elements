@@ -93,40 +93,40 @@ domain thT10 = N1
 
 # thread sequence domains onto target structures
 # transcription switch
-G1.seq = thR1 ta* thG1* thH1 thG1 ta
-G2.seq = thR2 ta* thG2* thH2 thG2 ta
-G3.seq = thR3 ta* thG3* thH3 thG3 ta
-G4.seq = thR4 ta* thG4* thH4 thG4 ta
-G5.seq = thR5 ta* thG5* thH5 thG5 ta
-G6.seq = thR6 ta* thG6* thH6 thG6 ta
-G7.seq = thR7 ta* thG7* thH7 thG7 ta
-G8.seq = thR8 ta* thG8* thH8 thG8 ta
-G9.seq = thR9 ta* thG9* thH9 thG9 ta
-G10.seq = thR10 ta* thG10* thH10 thG10 ta
+G1.seq = thR1* ta* thG1* thH1* thG1 ta
+G2.seq = thR2* ta* thG2* thH2* thG2 ta
+G3.seq = thR3* ta* thG3* thH3* thG3 ta
+G4.seq = thR4* ta* thG4* thH4* thG4 ta
+G5.seq = thR5* ta* thG5* thH5* thG5 ta
+G6.seq = thR6* ta* thG6* thH6* thG6 ta
+G7.seq = thR7* ta* thG7* thH7* thG7 ta
+G8.seq = thR8* ta* thG8* thH8* thG8 ta
+G9.seq = thR9* ta* thG9* thH9* thG9 ta
+G10.seq = thR10* ta* thG10* thH10* thG10 ta
 
 # threshold
-TH1.seq = thT1 thR1 ta* thG1* thH1 thG1
-TH2.seq = thT2 thR2 ta* thG2* thH2 thG2
-TH3.seq = thT3 thR3 ta* thG3* thH3 thG3
-TH4.seq = thT4 thR4 ta* thG4* thH4 thG4
-TH5.seq = thT5 thR5 ta* thG5* thH5 thG5
-TH6.seq = thT6 thR6 ta* thG6* thH6 thG6
-TH7.seq = thT7 thR7 ta* thG7* thH7 thG7
-TH8.seq = thT8 thR8 ta* thG8* thH8 thG8
-TH9.seq = thT9 thR9 ta* thG9* thH9 thG9
-TH10.seq = thT10 thR10 ta* thG10* thH10 thG10
+TH1.seq = thT1* thR1* ta* thG1* thH1* thG1
+TH2.seq = thT2* thR2* ta* thG2* thH2* thG2
+TH3.seq = thT3* thR3* ta* thG3* thH3* thG3
+TH4.seq = thT4* thR4* ta* thG4* thH4* thG4
+TH5.seq = thT5* thR5* ta* thG5* thH5* thG5
+TH6.seq = thT6* thR6* ta* thG6* thH6* thG6
+TH7.seq = thT7* thR7* ta* thG7* thH7* thG7
+TH8.seq = thT8* thR8* ta* thG8* thH8* thG8
+TH9.seq = thT9* thR9* ta* thG9* thH9* thG9
+TH10.seq = thT10* thR10* ta* thG10* thH10* thG10
 
 # repressor
-rR1.seq = thG1* thH1* thG1 ta thR1* thT1*
-rR2.seq = thG2* thH2* thG2 ta thR2* thT2*
-rR3.seq = thG3* thH3* thG3 ta thR3* thT3*
-rR4.seq = thG4* thH4* thG4 ta thR4* thT4*
-rR5.seq = thG5* thH5* thG5 ta thR5* thT5*
-rR6.seq = thG6* thH6* thG6 ta thR6* thT6*
-rR7.seq = thG7* thH7* thG7 ta thR7* thT7*
-rR8.seq = thG8* thH8* thG8 ta thR8* thT8*
-rR9.seq = thG9* thH9* thG9 ta thR9* thT9*
-rR10.seq = thG10* thH10* thG10 ta thR10* thT10*
+rR1.seq = thG1* thH1 thG1 ta thR1 thT1
+rR2.seq = thG2* thH2 thG2 ta thR2 thT2
+rR3.seq = thG3* thH3 thG3 ta thR3 thT3
+rR4.seq = thG4* thH4 thG4 ta thR4 thT4
+rR5.seq = thG5* thH5 thG5 ta thR5 thT5
+rR6.seq = thG6* thH6 thG6 ta thR6 thT6
+rR7.seq = thG7* thH7 thG7 ta thR7 thT7
+rR8.seq = thG8* thH8 thG8 ta thR8 thT8
+rR9.seq = thG9* thH9 thG9 ta thR9 thT9
+rR10.seq = thG10* thH10 thG10 ta thR10 thT10
 
 # tubes
 tube Rs = rR1 rR2 rR3 rR4 rR5 rR6 rR7 rR8 rR9 rR10
